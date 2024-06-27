@@ -10,12 +10,12 @@ export default async function ProfileServer() {
     <div>
       {session.user && (
         <div>
-          {/* <Image
+          <Image
             src={session.user.picture}
             alt={session.user.name}
             width={50}
             height={50}
-          /> */}
+          />
           <h2>{session.user.name}</h2>
           <p>{session.user.email}</p>
         </div>
