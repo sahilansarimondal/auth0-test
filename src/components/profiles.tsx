@@ -15,7 +15,12 @@ export default function ProfileClient() {
     user && (
       <div>
         {user.picture && user.name ? (
-          <Image src={user.picture} alt={user.name} />
+          <Image
+            src={user.picture}
+            alt={user.name}
+            width={50}
+            height={50}
+          />
         ) : (
           <div>There is Picture</div>
         )}
