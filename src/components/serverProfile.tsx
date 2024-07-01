@@ -3,8 +3,7 @@ import Image from "next/image";
 
 export default async function ProfileServer() {
   const session = await getSession();
-  console.log(session?.user);
-  console.log(session?.accessToken);
+
   if (!session?.user) return <div>User not found</div>;
   return (
     <div>
